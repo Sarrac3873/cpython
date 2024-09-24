@@ -3,10 +3,13 @@
 # Sphinx version is pinned so that new versions that introduce new warnings
 # won't suddenly cause build failures. Updating the version is fine as long
 # as no warnings are raised by doing so.
-sphinx==3.2.1
+sphinx==3.3.0
 
 blurb
 
 # The theme used by the documentation is stored separately, so we need
 # to install that as well.
 python-docs-theme
+requests>=2.32.2 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
